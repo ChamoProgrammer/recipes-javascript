@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./recipes.css">
+    <title>ver receta</title>
+</head>
+<body>
+
+    
+      <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="nav">
+        <div>
+          <h2>Tablero de instrumentos<span id="dot">.</span></h2>
+        </div>
+        <div>
+          <input type="color" value="#20b2aa" id="colorWell">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAVIGATION MENU AND DISPLAY MY RECIPES -->
+  <section>
+    <div class="container">
+
+      <!-- WRAPPER FOR CSS GRID -->
+      <div class="wrapper">
+
+        <!-- NAVIGATION MENU -->
+        <div class="menu">
+          <div class="cheff">
+            <i class="fas fa-user"></i>
+            <p id="myname">Elder Adan</p>
+          </div>
+          <a href="./api_recipe_index.html">
+            <li id="current"><i class="fas fa-receipt" id="receipt" style="margin-right: 10px;"></i>Mis recetas</li>
+          </a>
+          <a href="./add_recipe.html">
+            <li><i class="fas fa-plus-square" id="square" style="margin-right: 10px;"></i>Agregar Receta</li>
+          </a>
+          <a href="./saved_recipe.html">
+            <li><i class="fas fa-save" id="save" style="margin-right: 10px;"></i>Guardar Recetas</li>
+          </a>
+          <a href="./search_recipe.html">
+            <li><i class="fas fa-search" id="search" style="margin-right: 10px;"></i>Guardar Recetas</li>
+          </a>
+        </div>
+
+        <!-- RESPONSIVE NAVIGATION MENU ACTIVATES AT 768px -->
+        <div class="responsive-menu">
+          <div class="cheff">
+            <i class="fas fa-user"></i>
+          </div>
+          <a href="./api_recipe_index.html">
+            <li class="current"><i class="fas fa-receipt" id="receipt"></i></li>
+          </a>
+          <a href="./add-recipe.html">
+            <li><i class="fas fa-plus-square" id="square"></i></li>
+          </a>
+          <a href="./saved-recipes.html">
+            <li><i class="fas fa-save" id="save"></i></li>
+          </a>
+          <a href="./search-recipes.html">
+            <li><i class="fas fa-search" id="search"></i></li>
+          </a>
+        </div>
+
+  
+
+          
+            <!-- ALLOW USER TO VIEW A 'BIG VERSION' OF THE RECIPE -->
+            <div class="display">
+                <div>
+                  <a href="api_recipe_index.html"><i class="fas fa-arrow-circle-left"></i></a>
+                </div>
+                <div class="view-recipe-card"></div>
+              </div>
+      
+            </div>
+          </div>
+        </section>
+    
+  <script src="./recipe.js"></script>
+
+</body>
+</html>
